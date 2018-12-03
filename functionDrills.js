@@ -1,9 +1,10 @@
 function createGreeting(name, age) {
+    if(name === undefined || age === undefined){
+        throw new Error('Arguments not valid');
+    }
     return `Hi, my name is ${name} and I'm ${age} years old. I was born in ${yearOfBirth(age)}`;
-
 }
 
-const nickAndHisAge = createGreeting('Nick', 28);
 function yearOfBirth(age) {
     if (age < 0 || typeof age !== 'number'){
         throw new Error("Age cannot be below 0 and must be a number"); 
@@ -14,7 +15,7 @@ function yearOfBirth(age) {
 
 
 try {
- createGreeting('Nick', -5);
+ createGreeting();
 } catch(e) {
     console.log(e);
 }
