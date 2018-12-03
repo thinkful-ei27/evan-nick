@@ -1,7 +1,3 @@
-const myTeam = 'Evon and Nickerdoodle';
+const myTeam = 'Evan and Nick';
 
 console.log(myTeam);
-
-function sayHi(name){
-    return `${name} says "Hi"`;
-}
