@@ -1,3 +1,3 @@
 # evan-nick
-Evan and k (github practice)
-Hello my name is 
+Hello our names are Evan and Nick (github practice);
+
